@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+.nav img{
+    position: fixed;
+    left: 145px;
+    width: 40x;
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 10px;
+    z-index: 1;
+}
+.nav{
+    position: fixed;
+    background-color: black;
+    border-bottom: 2px solid #000000;
+    text-align: right;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    z-index: 1;
+}
+
+.menu{
+    margin: 0 140px 0 0 ;
+   }
+   
+.menu a
+{   
+    color: white;
+    font-size: 14px; 
+    margin: 0 30px 0 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+
+label{
+    color: white;
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+#toggle{
+    display:none;
+}
+
+header{
+    background-image: url("image/image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+}
+
+.Ecole{
+    font-size: 20px;
+    color: white;
+    margin-top: 0px;  
+    padding: 160px;
+    letter-spacing: 2px; 
+
+}
+
+.titre0{
+    font-size: 40px;
+}
+
+.Ecole p{
+    margin-top: 20px;
+}
+
+.butt{
+    display: flex;
+    margin-top:-100px;
+    margin-left: 160px;
+}
+
+.B0,.B1,.B2{
+    font-size: 15px;
+    color:white;
+    background-color: #008AFF;
+    border-radius: 50px;
+    height:50px;
+    width: 170px;
+    border: none;
+    box-shadow: 0px 0px 35px -6px rgb(104, 168, 221);
+    cursor: pointer;
+}
+
+.B1{
+    background-color: white;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid white;
+    margin-right: 20px;
+}
+
+.B2{
+    width: 200px;
+}
+
+button:hover{
+    background-color: white;
+    box-shadow: 0px 15px 20px rgba(0,0,128, 0.3);
+    color: #57A9EC;
+    transform: translateY(-5px);
+}
+
+.espace{
+    background-color: white;
+    width: 100%;
+    height:70px;
+    
+}
+
+
+h3{
+    color: #008AFF;
+    font-size: 20px;
+    text-align: center;
+    font-family: montserrat;
+}
+
+.parag1 {
+    width: 85%;
+    margin:auto;
+    line-height: 25px;
+    border: 4px solid rgb(163, 207, 245);
+    padding:30px;
+
+}
+
+
+
+.table1{
+    border-color: gray;
+    width: 60%;
+    margin: auto;
+    height: 300px;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 15px -6px rgb(255, 176, 255);
+    
+    
+}
+
+
+.titable p{
+    color:rgb(146, 22, 22);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
+.formateurs{
+    width:70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.format1, .format2, .format3{
+    text-align: center;
+}
+
+.Formateur{
+    border:1px solid black;
+    width:150px;
+    height: 150px;
+    padding:10px;
+    font-weight: bold;
+}
+
+.col1,.col2,.col3
+{
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 100px;
+    background-color: #000;
+}
+
+.foo{
+    padding-top: 20px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.foo1,.foo2,.foo3{
+    width: 33%;
+    
+}
+
+.foo  p {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1.7;
+    font-family: 'Montserrat';
+    letter-spacing: 0.08em;
+}
+
+.foo1  p {
+    text-align: left;
+}
+
+.foo2  p {
+    text-align: center;
+}
+
+.foo3  p {
+    text-align: right;
+}
+
+.icons
+{
+    text-align: right;
+}
+
+.icons a
+{
+    display: inline;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: right;
+    line-height: 35px;
+    margin-right: 13px;
+    text-decoration: none;
+}
+.mail i
+{
+    font-size:13px; 
+    color: #666666;
+}
+.mail a
+{
+    color:#337ab7;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px){
+
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu img{
+    position: fixed;
+    left: 175px;
+    top:6px;
+    width: 40x;
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 10px;
+    }
+
+    .menu  {
+    text-align: center;
+    width: 100%;
+    display: none;
+    }
+
+
+    .menu a {
+    display:block;
+    border-bottom:1px solid #EAEAEB;
+    margin:0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    }
+
+    .B0{
+        width: 90%;
+        margin:auto;
+        border: 1px solid white;
+    }
+
+    #toggle:checked + .menu{
+    display: block;     
+    }
+
+
+    .descEcole{
+    justify-content: center;
+    }
+
+    .Ecole{ 
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+
+    .butt{
+     margin-left: 50px;
+    }
+        
+
+    button{
+    background-color:#038DFE;
+    color: white;
+    border: 0px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    width:200px;
+    }
+
+
+
+    .formateurs{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Formateur{
+        border:1px solid black;
+        width:50%;
+        margin:auto;
+        height: 150px;
+        padding:10px;
+        font-weight: bold;
+    }
+
+    .col1,.col2,.col3
+    {
+        margin-top: 5px;
+        text-decoration: underline;
+        margin-bottom: 40px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    footer{
+        margin-top: 50px;
+        height: 200px;
+    }
+    .foo{
+        flex-direction: column;
+    }
+    .foo1,.foo2,.foo3{
+        width: 100%;
+    }
+    .icons,.foo3 p,.foo2 p ,.foo1 p,.mail
+    {
+        text-align: center;
+    }
+}

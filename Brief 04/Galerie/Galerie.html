@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Galerie </title>
+        <link rel="stylesheet" href="Galerie.css"/>
+
+        <script>
+        function Valider2(){
+                let email2 = document.getElementById('Email2');
+                let rgx2 = /^[A-Za-z0-9]+@[A-Za-z]{3,9}.[A-Za-z]{2,4}$/;
+
+
+                if(email2.value=="" || !rgx2.test(email2.value))
+                        {
+                                document.getElementById('5').innerHTML= "Email invalide"
+                        }
+                        else{
+                                document.getElementById('5').innerHTML= "";
+                        }
+        }
+        </script>
+
+    </head>
+
+
+
+    <body>
+             <div class="cover">
+                        <header>
+                        <div class="nav">
+                                <img src="Images/logotnow1.png" alt="logo">
+                            
+                            <label id="LabelT" for="toggle">&#9776;</label>
+                                <input type="checkbox" id="toggle"/>
+                            <div class="menu" >
+                    
+                                <a href="accueil.html">Accueil</a>
+                                <a href="propos.html">A propos</a>
+                                <a href="service.html">Service</a>
+                                <a href="promo.html">Promo</a>
+                                <a href="../Galerie/Galerie.html">Galerie</a>
+                                <a href="../Contact/Contact.html">Contact</a>
+                                
+                            </div>
+                        </div>
+                        </header>
+
+                    <div class="cont">
+                                <div class=title>
+                                <h2>Soleil, Joie De Vivre !</h2>
+                                <p>Laissez-vous emporter par la magie des Émirats Arabes<br> Unis, Dubaï </p>
+                                </div > 
+                                <div class="buttons">
+                                        <button class="B2">Découvrir</button>
+                                </div>
+                    </div>
+              </div>
+
+    
+          
+
+
+        <div class="espace">
+
+        </div>
+
+        <tbody>
+            <div class="image1"> 
+                <img src="Images/image.jpg" alt="voyage"/>
+            </div>
+
+            <div class="Parag">
+                <h2> Vous manquez une idée de voyage?</h2>
+                <p> 
+                        Que vous préfériez rester près de chez vous ou planifier un voyage en Europe ou dans le monde - découvrez des destinations de voyage populaires,
+                         de la détente aux escapades urbaines en passant par des conseils d'initiés. Vos prochaines vacances sont garanties!
+                </p>
+            </div>
+
+
+            <div class="espace">
+
+            </div>
+        
+
+
+            <div class="Tout">
+               
+                        <div class="Element">
+                            <div> <img src="Images/marrakech.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                            <div class="Parag2">
+                                <h1> Marrakech-Maroc </h1>
+                                <p> Rappelons que cette ville est une adresse parfaite de divertissement. La nuit comme le jour, vous pouvez assister à des scènes uniques
+                                    à divers endroits. Des bars, des discothèques, des restaurants ouvrent leurs portes pour accueillir Marocains et étrangers.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="Element">
+                                <div> <img src="Images/Paris.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Paris-France </h1>
+                                        <p> La nuit commence à Paris quand la tour Eiffel se met à scintiller…           
+                                            Dans tous les quartiers, dans un restaurant, un bar, un cabaret, ou même sur un bateau ou dans un bus, les noctambules partagent un moment de convivialité avant de poursuivre
+                                            la soirée dans un club tendance.
+                                        </p>
+                                </div>
+                        </div>
+
+
+
+                        <div class="Element">
+                                <div> <img src="Images/Chefchaouen.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Chefchaouen-Maroc </h1>
+                                        <p> Chefchaouen est une petite ville de montagne du nord-est du Maroc au cadre superbe, pleine de charme et d’authenticité et à l’écart des grands centres touristiques.Elle est réputée pour les bâtiments remarquables de différents tons de bleu délavé de sa vieille ville.
+                                        </p>
+                                </div>
+                        </div>
+               
+
+
+               
+                        <div class="Element">
+                                 <div> <img src="Images/dubai.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Dubaï- Émirates </h1>
+                                        <p> Dubaï est une ville et un émirat des Émirats arabes unis réputé pour son shopping de luxe, son architecture ultramoderne et sa vie nocturne animée. La Burj Khalifa, tour de 830 mètres de haut, domine le paysage urbain parsemé de gratte-ciel.
+                                        </p>
+                                </div>
+                        </div>
+
+                        <div class="Element">
+                                 <div> <img src="Images/Tanger.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Tanger-Maroc </h1>
+                                        <p> C'est l’une des plus anciennes villes d’Afrique du Nord. Sa médina, sa kasbah, ses bazars et ses souks comptent parmi les plus animés du pays, et ses plages sont superbes. Au siècle dernier, Tanger est devenu l’un des lieux de prédilection de la jet set internationale.
+                                        </p>
+                                </div>
+                        </div>
+
+                        <div class="Element">
+                                 <div> <img src="Images/Berlin.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Berlin-Allemagne </h1>
+                                        <p> La capitale allemande, Berlin, est réputée pour sa scène artistique et ses monuments modernes, comme la Philharmonie de Berlin, un bâtiment doré construit en 1963 dont le toit présente une forme géométrique particulière.
+                                        </p>
+                                </div>
+                         </div>
+              
+
+
+                        <div class="Element">
+                                 <div> <img src="Images/Barcelone.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Barcelone-Espagne </h1>
+                                        <p> Barcelone,est réputée pour son art et son architecture. La basilique de la Sagrada Família et d'autres bâtiments emblématiques conçus par Antoni Gaudí sont de parfaits exemples du modernisme catalan. Le musée Picasso et la fondation Joan Miró présentent des œuvres d'art réalisées par les artistes qui leur ont donné leur nom.
+                                        </p>
+                                </div>
+                        </div>
+
+                        <div class="Element">
+                                 <div> <img src="Images/Campanie.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Campanie-Italie </h1>
+                                        <p> La Campanie est une région du sud-ouest de l'Italie connue pour ses ruines antiques et son littoral spectaculaire. Naples, sa capitale, est une ville bouillonnante située dans un cadre naturel magnifique entre l'emblématique cône gris du Vésuve et les eaux bleues de la baie de Naples.
+                                        </p>
+                                </div>
+                        </div>
+
+                        <div class="Element">
+                                 <div> <img src="Images/Hawai.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Hawaï-États-Unis </h1>
+                                        <p> Hawaii, un État américain, est un archipel volcanique isolé dans le Pacifique central. Ses îles sont réputées pour leurs paysages accidentés composés de falaises, de chutes d'eau, de forêt tropicale et de plages dont le sable arbore des teintes dorées, rouges, noires, voire vertes.
+                                        </p>
+                                </div>
+                         </div>
+               
+
+
+                        <div class="Element">
+                                 <div> <img src="Images/Istanbul.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Istanbul-Turquie </h1>
+                                        <p> Située à mi-chemin entre l’Europe et l’Asie, Istanbul jouit d’une position stratégique sur l’ancienne route de la soie qui en fait l’une des villes les plus importantes de l’Histoire.
+                                                Sa situation géographique lui a toujours assuré un développement économique important, mais la ville a aussi acquis 
+                                                une incroyable animation culturelle. 
+                                        </p>
+                                </div>
+                        </div>
+
+                        <div class="Element">
+                                 <div> <img src="Images/Marseille.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Marseille-France </h1>
+                                        <p>Son climat méditerranéen offre à ses habitants un ensoleillement exceptionnel. Des conditions rêvées pour découvrir les multiples facettes de la cité phocéenne ou tout simplement lézarder sur l’une des nombreuses plages ou calanques dont elle dispose.
+                                        </p>
+                                </div>
+                        </div>
+
+                        <div class="Element">
+                                 <div> <img src="Images/Sahara.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Sahara-Maroc </h1>
+                                        <p> Le terrain saharien, par ses spécificités, se prête particulièrement bien à ce fantasme du voyage originel dont tout touriste rêve. Il fascine car il est l’antithèse des lieux touristiques. Par la magie de cette destination, le touriste est mis en condition de se transcender en aventurier, voyageur, baroudeur ou raider.
+                                        </p>
+                                </div>
+                         </div>
+
+
+                        <div class="Element">
+                                 <div> <img src="Images/Londres.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Londres-l'Angleterre  </h1>
+                                        <p> London est une ville moderne dont l'histoire remonte à l'époque romaine. En son centre se dressent l'imposant Parlement. De l'autre côté de la Tamise, le London Eye, la grande roue, offre une vue panoramique sur le South Bank Center, et toute la ville.
+                                        </p>
+                                </div>
+                        </div>
+
+                        <div class="Element">
+                                 <div> <img src="Images/NewYork.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> NewYork-États-Unis </h1>
+                                        <p> Ville majeure des États-Unis, New York, aussi nommée The Big Apple ou NYC, est l’un des incontournables à visiter aux USA ! Il s’agit de la ville la plus peuplée des États-Unis, mais également de sa capitale culturelle. Vous y trouverez à la fois de très nombreux musées, mais aussi des quartiers reflétant le visage multiculturel et historique de la ville.
+                                        </p>
+                                </div>
+                        </div>
+
+                        <div class="Element">
+                                 <div> <img src="Images/rio de janeiro.jpg"  width="100% " height="100%" alt="marrakech"> </div>
+                                <div class="Parag2">
+                                        <h1> Rio de janeiro-Brésil </h1>
+                                        <p>Rio de Janeiro est une grande ville du Brésil située en bord de mer. Elle est connue pour ses plages de Copacabana et d'Ipanema, sa statue du Christ Rédempteur de 38 mètres de haut située au sommet du Corcovado et le Pain de Sucre, pic de granite
+                                                dont le sommet est accessible via 2 téléphériques.
+
+                                        </p>
+                                </div>
+                         </div>
+
+
+            </div>
+
+            <div class="espace">
+
+            </div>
+
+
+            <div class="Evaluation">
+                    <p> Evaluez notre suggestion</p>
+                    
+                    <div class="rating">
+                        <a href="#5" title="Give 5 stars">☆</a>
+                        <a href="#4" title="Give 4 stars">☆</a>
+                        <a href="#3" title="Give 3 stars">☆</a>
+                        <a href="#2" title="Give 2 stars">☆</a>
+                        <a href="#1" title="Give 1 star">☆</a>
+                </div>
+            </div>
+
+            <div class="espace">
+
+           </div>
+
+
+
+            <div class="email">
+                <div class="ema">
+                        <p>Bénéficiez de 10 % de réduction sur votre réservation</p>
+                        <div class="em1">
+                                <input type="email" placeholder="entrez votre e-mail" id="Email2">
+                                <button onclick="Valider2()"><img src="Images/email-84.png"> Envoyer</button>
+                        </div>
+                                <span id="5" style="color:red;"></span>
+                </div> 
+            </div>
+
+
+
+
+        </tbody>
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <footer>
+                <div class="block">
+                        <div class="block1">  
+                                <img src="Images/logotnow1.png" alt="logo">
+                                <p> Suivez-nous sur les réseaux sociaux</p>
+                                <a><img id="facebook" src="Images/facebook.png" alt="facebook" ></a>
+                                <a ><img src="Images/twitter.png" alt="twitter" ></a>
+                                <a><img src="Images/linkedin-in.png" alt="linkedin" ></a>
+                        </div>
+
+                        <div class="block1"> 
+                                <strong>QUICK LINKS</strong>
+                                <p>HOME</p>
+                                <p>ABOUT US</p>
+                                <p>CITY GUIDE</p>
+                                <p>BLOG</p>
+                                <p>FAQ's</p>
+                        </div>
+
+                        <div class="block1">
+                                        <strong>CONTACT US</strong>
+                                        <p>Feel free to get in touch with us via phone or send<br> us a message</p>
+                                        <div class="contact">
+                                                <p>+1 800 123 1234</p>
+                                                <p><strong>email@website.com</strong></p>
+                                         </div>
+                        </div>
+                </div>
+          
+                <div class="copy">
+                        <div class="p">
+                                <p>@Copyright 2019. All Right Reserved</p>
+                                <div class="p2">
+                                        <p>Privacy Policy </p>
+                                        <p>Terms & Conditions</p>
+                                </div>
+                        </div>
+                </div>
+                
+
+
+                <div class="footer2">
+                        <img id="logo" src="Images/logotnow1.png" alt="logo"><br>
+                        <p>CONTACT US</p>
+                        <strong>+1 800 123 1234</strong><br>
+                        <strong>email@website.com</strong>
+                        <p> Suivez-nous sur les réseaux sociaux</p>
+                        <a ><img id="facebook" src="Images/facebook.png" alt="facebook" ></a>
+                        <a ><img src="Images/twitter.png" alt="twitter" ></a>
+                        <a><img src="Images/linkedin-in.png" alt="linkedin" ></a>
+                        <p>@Copyright 2019</p>
+                        <p> All Right Reserved</p>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="UTF-8">     
+        <title> Contact </title>
+        <link rel="stylesheet" href="Contact.css"/>
+        <!--  background-position-x=533px -->
+
+
+        <script type="text/javascript">
+        
+                function Valider(){
+                        let nom = document.getElementById('Nom');
+                        let prenom = document.getElementById('Prenom');
+                        let email = document.getElementById('Email');
+                        let num = document.getElementById('Num');
+                        let pays = document.getElementById('Pays');
+                        let ville = document.getElementById('Ville');
+                        let msg = document.getElementById('Message');
+                        let rgx = /^0[5-6-7][0-9]{8}$/;
+                        
+                        let s1 = document.getElementById('1');
+                        let s2 = document.getElementById('2');
+                        let s3 = document.getElementById('3');
+
+
+
+
+                        if(nom.value=="" ||  prenom.value==""||  email.value==""||  num.value==""||  pays.value==""||  ville.value=="" ||  msg.value=="")
+                        {
+                                s1.innerHTML= "Veuillez remplir tous les champs!!"
+                        }
+                        else if(email.value.indexOf('@')==-1 )
+                        {
+                                s1.innerHTML="";
+                                s2.innerHTML= "email invalide"
+
+                                if( !rgx.test(num.value))
+                                {
+                                        s3.innerHTML= "numéro invalide"
+                                }
+                                else{
+                                       s3.innerHTML="";
+                                }
+                        }
+                        else{
+                                s1.innerHTML="";
+                                s2.innerHTML="";
+                                s3.innerHTML="";
+                                alert('Message bien envoyé !!');
+                                nom.value="";
+                                prenom.value="";
+                                email.value="";
+                                num.value="";
+                                pays.value="";
+                                ville.value="";
+                                msg.value="";
+                        }
+
+                }
+
+
+        
+                function Valider2(){
+                        let email2 = document.getElementById('Email2');
+                        let rgx2 = /^[A-Za-z0-9]+@[A-Za-z]{3,9}.[A-Za-z]{2,4}$/;
+
+
+                        if(email2.value=="" || !rgx2.test(email2.value))
+                                {
+                                        document.getElementById('5').innerHTML= "Email invalide"
+                                }
+                                else{
+                                        document.getElementById('5').innerHTML= "";
+                                }
+                }
+        </script>
+   </head>
+
+
+
+   <body>
+        <div class="cover">
+                <header>
+                   <div class="nav">
+                        <img src="Images/logotnow1.png" alt="logo">
+                       
+                       <label id="LabelT" for="toggle">&#9776;</label>
+                        <input type="checkbox" id="toggle"/>
+                       <div class="menu" >
+               
+                           <a href="accueil.html">Accueil</a>
+                           <a href="propos.html">A propos</a>
+                           <a href="service.html">Service</a>
+                           <a href="promo.html">Promo</a>
+                           <a href="../Galerie/Galerie.html">Galerie</a>
+                           <a href="../Contact/Contact.html">Contact</a>
+                          
+                       </div>
+                   </div>
+                 </header>
+
+               <div class="cont">
+                        <div class=title>
+                        <h2>Soleil, Joie De Vivre !</h2>
+                        <p>Laissez-vous emporter par la magie des Émirats Arabes<br> Unis, Dubaï </p>
+                        </div > 
+                        <div class="buttons">
+                                <button class="B2">Découvrir</button>
+                        </div>
+                </div>
+          </div>
+          
+
+
+        <div class="espace">
+
+        </div>
+
+
+
+
+        <tbody>
+                <div class="tit"> Contact </div>
+
+                <div class="espace">
+
+                </div>
+
+                <div class="Part1">
+                        <div class="titre1"> Centre de service TravelNow </div>
+                        <div class="paragIm">
+                        <div class="divIm"> <p><img src="Images/Service.jpg" alt="contact" /></p></div>
+                        <div><p>
+                                Vous avez une question sur notre offre en ligne ou sur votre réservation? Alors contactez-nous.
+                                Vous pouvez nous joindre <br>
+                                <b> lundi au vendredi de 8 h à 20 h et le samedi de 10 h à 20h.</b>
+                        </p></div>
+                        </div>
+                </div>
+
+                <div class="espace">
+
+                </div>
+
+                <div class="formulaire">
+                        <div class="l1">
+                                        <div class="col1">
+                                                <div><label for="Nom"> Nom *</label></div>
+                                                <div><input type="text" id="Nom" autofocus></div>
+                                        </div><br>  
+                                        <div class="col1"> 
+                                                <div><label for="Prenom"> Prenom *</label></div>
+                                                <div><input type="text" id="Prenom"></div>
+                                        </div>
+                        </div>
+                        <div class="l2">
+                                        <div class="col1">
+                                                <div><label for="Email"> Email *</label></div>
+                                                <div><input type="text" id="Email"></div><span id="2" style="color:red;"></span>
+                                        </div><br>
+                                        <div class="col1">
+                                                <div><label for="Num"> Téléphone *</label> </div>
+                                                <div><input type="text" id="Num"></div><span id="3" style="color:red;"></span>
+                                        </div>
+                        </div>
+                        <div class="l3">
+                                        <div class="col1">
+                                                <div><label for="Pays"> Pays *</label></div>
+                                                <div><input type="text" id="Pays"> </div>
+                                        </div><br>
+                                        <div class="col1">
+                                                <div><label for="Ville"> Ville *</label></div>
+                                                <div> <input type="text" id="Ville"></div>
+                                        </div>
+                        </div>
+                        <div class="l4">
+                                        <div class="col1">
+                                        <div><label for="Message"> Ecrivez votre message *</label></div>
+                                        <div> <textarea type="text" id="Message"> </textarea></div>
+                                        </div>
+                        </div><span id="1" style="color:red;"></span>
+                        <div class="l5">
+                                <input type="button" class="btnEnvoyer" value="Envoyer" onclick="Valider()"/>
+                        </div>
+                </div>
+                
+
+                <div class="espace">
+
+                </div>
+        
+                <div class="im">
+                        <img src="Images/map.png" alt="back" class="image2"/>
+                </div>
+
+                <div class="espace">
+
+                </div>
+
+                <div class="Part3">
+                        <div class="sm">
+                                <div> <img src="Images/fb.png" alt="fb" > </div>
+                                <div> Travel now</div>
+                        </div>
+                        <div class="sm">
+                                <div> <img src="Images/email.png" alt="email"> </div>
+                                <div> TravelNow@gmail.com </div>
+                        </div>
+                        <div class="sm">
+                                <div> <img src="Images/twitter.png" alt="twitter"> </div>
+                                <div> Travel now</div>
+                        </div>
+                        <div class="sm">
+                                <div> <img src="Images/loc.png" alt="loc"> </div>
+                                <div> 515 Agency, 100... M8W6+G9 Kinshasa, Congo-Kinshasa</div>
+                        </div>
+                        <div class="sm">
+                                <div> <img src="Images/phone.png" alt="phone"> </div>
+                                <div class="phone"> +6 12345678</div>
+                        </div>
+                </div>
+                
+        </tbody>
+
+
+        <div class="espace">
+
+        <div>
+        <div class="espace">
+
+         <div>
+
+        
+           <div class="email">
+                <div class="ema">
+                        <p>Bénéficiez de 10 % de réduction sur votre réservation</p>
+                        <div class="em1">
+                                <input type="email" placeholder="entrez votre e-mail" id="Email2">
+                                <button onclick="Valider2()"><img src="Images/email-84.png"> Envoyer</button>
+                        </div>
+                                <span id="5" style="color:red;"></span>
+                </div> 
+            </div>
+
+
+
+
+        <footer>
+                <div class="block">
+                        <div class="block1">  
+                                <img src="Images/logotnow1.png" alt="logo">
+                                <p> Suivez-nous sur les réseaux sociaux</p>
+                                <a><img id="facebook" src="Images/facebook.png" alt="facebook" ></a>
+                                <a ><img src="Images/twitter.png" alt="twitter" ></a>
+                                <a><img src="Images/linkedin-in.png" alt="linkedin" ></a>
+                        </div>
+
+                        <div class="block1"> 
+                                <strong>QUICK LINKS</strong>
+                                <p>HOME</p>
+                                <p>ABOUT US</p>
+                                <p>CITY GUIDE</p>
+                                <p>BLOG</p>
+                                <p>FAQ's</p>
+                        </div>
+
+                        <div class="block1">
+                                        <strong>CONTACT US</strong>
+                                        <p>Feel free to get in touch with us via phone or send<br> us a message</p>
+                                        <div class="contact">
+                                                <p>+1 800 123 1234</p>
+                                                <p><strong>email@website.com</strong></p>
+                                         </div>
+                        </div>
+                </div>
+          
+                <div class="copy">
+                        <div class="p">
+                                <p>@Copyright 2019. All Right Reserved</p>
+                                <div class="p2">
+                                        <p>Privacy Policy </p>
+                                        <p>Terms & Conditions</p>
+                                </div>
+                        </div>
+                </div>
+                
+
+
+                <div class="footer2">
+                        <img id="logo" src="Images/logotnow1.png" alt="logo"><br>
+                        <p>CONTACT US</p>
+                        <strong>+1 800 123 1234</strong><br>
+                        <strong>email@website.com</strong>
+                        <p> Suivez-nous sur les réseaux sociaux</p>
+                        <a ><img id="facebook" src="Images/facebook.png" alt="facebook" ></a>
+                        <a ><img src="Images/twitter.png" alt="twitter" ></a>
+                        <a><img src="Images/linkedin-in.png" alt="linkedin" ></a>
+                        <p>@Copyright 2019</p>
+                        <p> All Right Reserved</p>
+            </div>
+        </footer>
+
+
+
+
+    </body>
+</html>
